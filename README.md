@@ -12,9 +12,9 @@ chmod u+x start_server.sh
 [Create Account on ngrok.com](https://dashboard.ngrok.com/get-started/your-authtoken)
 
 ### To invite friends
-chmod +x ngrok
-./ngrok authtoken 'your_auth_token'
-./ngrok tcp -region='your_region' 'server_port'
+1. chmod +x ngrok
+2. ./ngrok authtoken 'your_auth_token'
+3. ./ngrok tcp -region='your_region' 'server_port'
 
 ### Here are some common region codes you can use:
 us: United States
