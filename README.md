@@ -12,9 +12,16 @@ chmod u+x start_server.sh
 [Create Account on ngrok.com](https://dashboard.ngrok.com/get-started/your-authtoken)
 
 ### To invite friends
-1. chmod +x ngrok
-2. ./ngrok authtoken 'your_auth_token'
-3. ./ngrok tcp -region='your_region' 'server_port'
+Install ngrok - 
+1. `curl -s https://ngrok-agent.s3.amazonaws.com/ngrok.asc \
+	| sudo tee /etc/apt/trusted.gpg.d/ngrok.asc >/dev/null \
+	&& echo "deb https://ngrok-agent.s3.amazonaws.com buster main" \
+	| sudo tee /etc/apt/sources.list.d/ngrok.list \
+	&& sudo apt update \
+	&& sudo apt install ngrok`
+2. chmod +x ngrok
+3. ./ngrok authtoken 'your_auth_token'
+4. ./ngrok tcp -region='your_region' 'server_port'
 
 ### Here are some common region codes you can use:
 us: United States
