@@ -20,8 +20,8 @@ Install ngrok -
 	&& sudo apt update \
 	&& sudo apt install ngrok`
 2. chmod +x ngrok
-3. ./ngrok authtoken 'your_auth_token'
-4. ./ngrok tcp -region='your_region' 'server_port'
+3. ngrok authtoken 'your_auth_token'
+4. ngrok tcp --region='your_region' 'server_port'
 
 ### Here are some common region codes you can use:
 us: United States
